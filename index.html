@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\style.css">
+    <title>En'Kant</title>
+  </head>
+  <body >
+      <div class="container bgbase2">
+          <div class = "row bgbase">
+            <div class="col-6">
+              <img src="images\logoV3.png" class="img-responsive" style="width:80%" alt="logo">
+            </div>
+            <div class="col-6 mt-5">
+              <form class="navbar-form navbar-right inline-form">
+
+                <div class="form-group">
+                  <input class="champConnexion" type="text" id="mail" placeholder="Email">
+                  <input class="champConnexion" type="text" id="mdp" placeholder="Mot de passe">
+                  <button type="submit" class="btn btn-sm standard bgInfosGreen"></span> S'identifier</button>
+
+                </div>
+                <div class = "text-center standard">
+                  <a href="create.html" >Vous n'avez pas encore de compte ? Créez le ici !</a>
+                </div>
+                <br>
+
+                <div class="text-center">
+                  <div class="alert alert-danger standard" id="disable">Vous ne pouvez plus passer commande !</div>
+                  <div class="alert alert-success standard" id="enable">Vous pouvez passer commande !</div>
+
+                </div>
+
+              </form>
+            </div>
+          </div>
+          <div class="row text-center mt-2">
+            <div class="col-12">
+                <div class="row rounded bg-secondary p-2">
+                  <a href="#" class="btn btn-menu standard">Accueil</a>
+                  <a href="info.html" class="btn btn-menu standard">Votre compte</a>
+                  <a href="gestion.html" class="btn btn-menu standard">Gestion</a>
+                  <div type="" class="btn standard bgInfosGreen  mt-1"><span class="align-middle">Crédit: <span>0</span> €</span></div>
+              </div>
+              <ul class="nav nav-tabs">
+                <li class="jour enTeteMenu"><a data-toggle="tab" id="ongletLundi" class="jourMenu" href="#lundi" value="0">Lundi</a></li>
+                <li class="jour enTeteMenu"><a data-toggle="tab" id="ongletMardi" class="jourMenu" href="#mardi" value="1">Mardi</a></li>
+                <li class="jour enTeteMenu"><a data-toggle="tab" id="ongletMercredi" class="jourMenu" href="#mercredi" value="2">Mercredi</a></li>
+                <li class="jour enTeteMenu"><a data-toggle="tab" id="ongletJeudi" class="jourMenu" href="#jeudi" value="3">Jeudi</a></li>
+                <li class="jour enTeteMenu"><a data-toggle="tab" id="ongletVendredi" class="jourMenu" href="#vendredi" value="4">Vendredi</a></li>
+              </ul>
+
+              <div class="tab-content">
+                  <div id="lundi" class="tab-pane fade">
+                  </div>
+
+                  <div id="mardi" class="tab-pane fade">
+                  </div>
+
+                  <div id="mercredi" class="tab-pane fade">
+                  </div>
+
+                  <div id="jeudi" class="tab-pane fade">
+                  </div>
+
+                  <div id="vendredi" class="tab-pane fade">
+                  </div>
+              </div>
+              <div class="row mt-5 d-flex justify-content-center standard">
+                <input type="file" id="imagePlat" class="cantiniere" accept="image/png, image/jpeg"/>
+                <input type="text" size="50" id ="plat" class="cantiniere" placeholder="Nom du plat"><button class="btn btn-secondary btn-xs cantiniere standard" id="addDish" >Ajouter plat</button>
+              </div>
+              <div class="alert alert-danger standard" id="empty">Le champ est vide</div>
+
+              <div class="col-12 mt-5">
+                  <ul id="panier"><div class="enTeteCommande mb-2">Votre Commande:</div></ul>
+              </div>
+            </div>
+            <div class="row d-flex align-items-center" id="commande">
+              <div class="col-4 colorGrey enTete">Total:</div>
+              <div class="col-4 colorPink enTete cout"></div>
+              <div class="col-4">
+              <button class="btn btn-block btn-lg enTete">Commander</button></div>
+            </div>
+          </div>
+
+      </div>
+
+
+    <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js\index.js"></script>
+
+</body>
+
+</html>
